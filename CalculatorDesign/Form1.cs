@@ -95,6 +95,11 @@ namespace CalculatorDesign
         * --------------------------------------------------------------------------------
         */
 
+        /* 
+         *  ------------------------- DESIGN ---------------------------------------------
+         */
+
+        // Close button
         private void label23_MouseEnter(object sender, EventArgs e)
         {
             label23.ForeColor = Color.White;
@@ -105,6 +110,7 @@ namespace CalculatorDesign
             label23.ForeColor = Color.Lavender;
         }
 
+        // Minimize button
         private void label24_MouseEnter(object sender, EventArgs e)
         {
             label24.ForeColor = Color.White;
@@ -115,204 +121,204 @@ namespace CalculatorDesign
             label24.ForeColor = Color.Lavender;
         }
 
-        private void label19_MouseEnter(object sender, EventArgs e)
+        private void clearButton_MouseEnter(object sender, EventArgs e)
         {
-            label19.ForeColor = Color.DodgerBlue;
+            clearButton.ForeColor = Color.DodgerBlue;
         }
 
-        private void label19_MouseLeave(object sender, EventArgs e)
+        private void clearButton_MouseLeave(object sender, EventArgs e)
         {
-            label19.ForeColor = Color.Lavender;
+            clearButton.ForeColor = Color.Lavender;
         }
 
-        // #0
-        private void label5_MouseEnter(object sender, EventArgs e)
+        private void divisionButton_MouseEnter(object sender, EventArgs e)
         {
-            label5.ForeColor = Color.SkyBlue;
+            divisionButton.ForeColor = Color.DodgerBlue;
         }
 
-        private void label5_MouseLeave(object sender, EventArgs e)
+        private void divisionButton_MouseLeave(object sender, EventArgs e)
         {
-            label5.ForeColor = Color.Lavender;
+            divisionButton.ForeColor = Color.Lavender;
         }
 
-        private void label1_MouseEnter(object sender, EventArgs e)
+        private void modulusButton_MouseEnter(object sender, EventArgs e)
         {
-            label1.ForeColor = Color.DodgerBlue;
+            modulusButton.ForeColor = Color.DodgerBlue;
         }
 
-        private void label1_MouseLeave(object sender, EventArgs e)
+        private void modulusButton_MouseLeave(object sender, EventArgs e)
         {
-            label1.ForeColor = Color.Lavender;
+            modulusButton.ForeColor = Color.Lavender;
         }
 
-        private void label18_MouseEnter(object sender, EventArgs e)
+        private void multiplyButton_MouseEnter(object sender, EventArgs e)
         {
-            label18.ForeColor = Color.DodgerBlue;
+            multiplyButton.ForeColor = Color.DodgerBlue;
         }
 
-        private void label18_MouseLeave(object sender, EventArgs e)
+        private void multiplyButton_MouseLeave(object sender, EventArgs e)
         {
-            label18.ForeColor = Color.Lavender;
+            multiplyButton.ForeColor = Color.Lavender;
         }
 
-        // #9
-        private void label17_MouseEnter(object sender, EventArgs e)
+        private void substractionButton_MouseEnter(object sender, EventArgs e)
         {
-            label17.ForeColor = Color.SkyBlue;
+            substractionButton.ForeColor = Color.DodgerBlue;
         }
 
-        private void label17_MouseLeave(object sender, EventArgs e)
+        private void substractionButton_MouseLeave(object sender, EventArgs e)
         {
-            label17.ForeColor = Color.Lavender;
+            substractionButton.ForeColor = Color.Lavender;
         }
 
-        // #8
-        private void label16_MouseEnter(object sender, EventArgs e)
+        private void additionButton_MouseEnter(object sender, EventArgs e)
         {
-            label16.ForeColor = Color.SkyBlue;
+            additionButton.ForeColor = Color.DodgerBlue;
         }
 
-        private void label16_MouseLeave(object sender, EventArgs e)
+        private void additionButton_MouseLeave(object sender, EventArgs e)
         {
-            label16.ForeColor = Color.Lavender;
+            additionButton.ForeColor = Color.Lavender;
         }
 
-        // #7
-        private void label4_MouseEnter(object sender, EventArgs e)
+        private void parenthesisButton_MouseEnter(object sender, EventArgs e)
         {
-            label4.ForeColor = Color.SkyBlue;
+            parenthesisButton.ForeColor = Color.DodgerBlue;
         }
 
-        private void label4_MouseLeave(object sender, EventArgs e)
+        private void parenthesisButton_MouseLeave(object sender, EventArgs e)
         {
-            label4.ForeColor = Color.Lavender;
+            parenthesisButton.ForeColor = Color.Lavender;
         }
 
-        private void label15_MouseEnter(object sender, EventArgs e)
+        private void decimalButton_MouseEnter(object sender, EventArgs e)
         {
-            label15.ForeColor = Color.DodgerBlue;
+            decimalButton.ForeColor = Color.DodgerBlue;
         }
 
-        private void label15_MouseLeave(object sender, EventArgs e)
+        private void decimalButton_MouseLeave(object sender, EventArgs e)
         {
-            label15.ForeColor = Color.Lavender;
+            decimalButton.ForeColor = Color.Lavender;
         }
 
-        // #6
-        private void label14_MouseEnter(object sender, EventArgs e)
+        private void backspaceButton_MouseEnter(object sender, EventArgs e)
         {
-            label14.ForeColor = Color.SkyBlue;
+            backspaceButton.ForeColor = Color.DodgerBlue;
         }
 
-        private void label14_MouseLeave(object sender, EventArgs e)
+        private void backspaceButton_MouseLeave(object sender, EventArgs e)
         {
-            label14.ForeColor = Color.Lavender;
+            backspaceButton.ForeColor = Color.Lavender;
         }
 
-        // #5
-        private void label6_MouseEnter(object sender, EventArgs e)
+        private void nOneButton_MouseEnter(object sender, EventArgs e)
         {
-            label6.ForeColor = Color.SkyBlue;
+            nOneButton.ForeColor = Color.SkyBlue;
         }
 
-        private void label6_MouseLeave(object sender, EventArgs e)
+        private void nOneButton_MouseLeave(object sender, EventArgs e)
         {
-            label6.ForeColor = Color.Lavender;
+            nOneButton.ForeColor = Color.Lavender;
         }
 
-        // #4
-        private void label7_MouseEnter(object sender, EventArgs e)
+        private void nTwoButton_MouseEnter(object sender, EventArgs e)
         {
-            label7.ForeColor = Color.SkyBlue;
+            nTwoButton.ForeColor = Color.SkyBlue;
         }
 
-        private void label7_MouseLeave(object sender, EventArgs e)
+        private void nTwoButton_MouseLeave(object sender, EventArgs e)
         {
-            label7.ForeColor = Color.Lavender;
+            nTwoButton.ForeColor = Color.Lavender;
         }
 
-        private void label13_MouseEnter(object sender, EventArgs e)
+        private void nThreeButton_MouseEnter(object sender, EventArgs e)
         {
-            label13.ForeColor = Color.DodgerBlue;
+            nThreeButton.ForeColor = Color.SkyBlue;
         }
 
-        private void label13_MouseLeave(object sender, EventArgs e)
+        private void nThreeButton_MouseLeave(object sender, EventArgs e)
         {
-            label13.ForeColor = Color.Lavender;
+            nThreeButton.ForeColor = Color.Lavender;
+        }
+       
+        private void nFourButton_MouseEnter(object sender, EventArgs e)
+        {
+            nFourButton.ForeColor = Color.SkyBlue;
         }
 
-        // #3
-        private void label2_MouseEnter(object sender, EventArgs e)
+        private void nFourButton_MouseLeave(object sender, EventArgs e)
         {
-            label2.ForeColor = Color.SkyBlue;
+            nFourButton.ForeColor = Color.Lavender;
         }
 
-        private void label2_MouseLeave(object sender, EventArgs e)
+        private void nFiveButton_MouseEnter(object sender, EventArgs e)
         {
-            label2.ForeColor = Color.Lavender;
+            nFiveButton.ForeColor = Color.SkyBlue;
         }
 
-        // #2
-        private void label3_MouseEnter(object sender, EventArgs e)
+        private void nFiveButton_MouseLeave(object sender, EventArgs e)
         {
-            label3.ForeColor = Color.SkyBlue;
+            nFiveButton.ForeColor = Color.Lavender;
         }
 
-        private void label3_MouseLeave(object sender, EventArgs e)
+        private void nSixButton_MouseEnter(object sender, EventArgs e)
         {
-            label3.ForeColor = Color.Lavender;
+            nSixButton.ForeColor = Color.SkyBlue;
         }
 
-        // #1
-        private void label8_MouseEnter(object sender, EventArgs e)
+        private void nSixButton_MouseLeave(object sender, EventArgs e)
         {
-            label8.ForeColor = Color.SkyBlue;
+            nSixButton.ForeColor = Color.Lavender;
         }
 
-        private void label8_MouseLeave(object sender, EventArgs e)
+        private void nSevenButton_MouseEnter(object sender, EventArgs e)
         {
-            label8.ForeColor = Color.Lavender;
+            nSevenButton.ForeColor = Color.SkyBlue;
         }
 
-        private void label12_MouseEnter(object sender, EventArgs e)
+        private void nSevenButton_MouseLeave(object sender, EventArgs e)
         {
-            label12.ForeColor = Color.DodgerBlue;
+            nSevenButton.ForeColor = Color.Lavender;
         }
 
-        private void label12_MouseLeave(object sender, EventArgs e)
+        private void nEightButton_MouseEnter(object sender, EventArgs e)
         {
-            label12.ForeColor = Color.Lavender;
+            nEightButton.ForeColor = Color.SkyBlue;
         }
 
-        private void label11_MouseEnter(object sender, EventArgs e)
+        private void nEightButton_MouseLeave(object sender, EventArgs e)
         {
-            label11.ForeColor = Color.DodgerBlue;
+            nEightButton.ForeColor = Color.Lavender;
         }
 
-        private void label11_MouseLeave(object sender, EventArgs e)
+        private void nNineButton_MouseEnter(object sender, EventArgs e)
         {
-            label11.ForeColor = Color.Lavender;
+            nNineButton.ForeColor = Color.SkyBlue;
         }
 
-        private void label10_MouseEnter(object sender, EventArgs e)
+        private void nNineButton_MouseLeave(object sender, EventArgs e)
         {
-            label10.ForeColor = Color.DodgerBlue;
+            nNineButton.ForeColor = Color.Lavender;
         }
 
-        private void label10_MouseLeave(object sender, EventArgs e)
+        private void nZeroButton_MouseEnter(object sender, EventArgs e)
         {
-            label10.ForeColor = Color.Lavender;
+            nZeroButton.ForeColor = Color.SkyBlue;
         }
 
-        private void label9_MouseEnter(object sender, EventArgs e)
+        private void nZeroButton_MouseLeave(object sender, EventArgs e)
         {
-            label9.ForeColor = Color.DodgerBlue;
+            nZeroButton.ForeColor = Color.Lavender;
         }
 
-        private void label9_MouseLeave(object sender, EventArgs e)
+        /* 
+        *  ------------------------- DESIGN ENDS --------------------------------------
+        */
+
+        private void number_click(object sender, EventArgs e)
         {
-            label9.ForeColor = Color.Lavender;
+            Button number = (Button)sender;
+            label22.Text = label22.Text + number.Text;
         }
     }
 }
