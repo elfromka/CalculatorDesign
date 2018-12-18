@@ -315,10 +315,62 @@ namespace CalculatorDesign
         *  ------------------------- DESIGN ENDS --------------------------------------
         */
 
+        Double resultValue = 0;
+        String operationPerformed = "";
+        bool isOperationPerformed = false;
+
         private void number_click(object sender, EventArgs e)
         {
+            // Removing 0 if any number is entered
+            if (label22.Text == "0")
+            {
+                label22.Text = "";
+            }
+            isOperationPerformed = false;
+            // Passing numbers to label of the calculator
             Button number = (Button)sender;
             label22.Text = label22.Text + number.Text;
+        }
+
+        // +,-,*,/
+        private void operator_click(object sender, EventArgs e)
+        {
+            Button number = (Button)sender;
+            operationPerformed = number.Text;
+            resultValue = Double.Parse(label22.Text);
+            isOperationPerformed = true;
+        }
+
+        private void clearAll_click(object sender, EventArgs e)
+        {
+            label22.Text = "0";
+            resultValue = 0;
+        }
+
+        private void backspace_click(object sender, EventArgs e)
+        {
+            label22.Text = "0";
+        }
+
+        private void resultValue_click(object sender, EventArgs e)
+        {
+            switch (operationPerformed)
+            {
+                case "+":
+                    label21.Text = (resultValue + Double.Parse(label22.Text)).ToString();
+                    break;
+                case "-":
+                    label21.Text = (resultValue - Double.Parse(label22.Text)).ToString();
+                    break;
+                case "×":
+                    label21.Text = (resultValue * Double.Parse(label22.Text)).ToString();
+                    break;
+                case "÷":
+                    label21.Text = (resultValue / Double.Parse(label22.Text)).ToString();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
