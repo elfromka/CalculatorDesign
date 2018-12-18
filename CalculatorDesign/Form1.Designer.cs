@@ -147,7 +147,7 @@
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(62, 44);
             this.clearButton.TabIndex = 27;
-            this.clearButton.Text = "CE";
+            this.clearButton.Text = "C";
             this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.clearAll_click);
             this.clearButton.MouseEnter += new System.EventHandler(this.clearButton_MouseEnter);
@@ -443,7 +443,7 @@
             this.parenthesisButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.parenthesisButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parenthesisButton.ForeColor = System.Drawing.Color.Lavender;
-            this.parenthesisButton.Location = new System.Drawing.Point(211, 360);
+            this.parenthesisButton.Location = new System.Drawing.Point(213, 360);
             this.parenthesisButton.Name = "parenthesisButton";
             this.parenthesisButton.Size = new System.Drawing.Size(62, 44);
             this.parenthesisButton.TabIndex = 42;
@@ -468,6 +468,7 @@
             this.decimalButton.TabIndex = 43;
             this.decimalButton.Text = ".";
             this.decimalButton.UseVisualStyleBackColor = false;
+            this.decimalButton.Click += new System.EventHandler(this.number_click);
             this.decimalButton.MouseEnter += new System.EventHandler(this.decimalButton_MouseEnter);
             this.decimalButton.MouseLeave += new System.EventHandler(this.decimalButton_MouseLeave);
             // 
@@ -481,7 +482,7 @@
             this.nZeroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nZeroButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nZeroButton.ForeColor = System.Drawing.Color.Lavender;
-            this.nZeroButton.Location = new System.Drawing.Point(76, 417);
+            this.nZeroButton.Location = new System.Drawing.Point(73, 417);
             this.nZeroButton.Name = "nZeroButton";
             this.nZeroButton.Size = new System.Drawing.Size(62, 44);
             this.nZeroButton.TabIndex = 44;

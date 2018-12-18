@@ -322,14 +322,23 @@ namespace CalculatorDesign
         private void number_click(object sender, EventArgs e)
         {
             // Removing 0 if any number is entered
-            if (label22.Text == "0")
+            if (label22.Text == "0" || (isOperationPerformed))
             {
                 label22.Text = "";
             }
             isOperationPerformed = false;
             // Passing numbers to label of the calculator
             Button number = (Button)sender;
-            label22.Text = label22.Text + number.Text;
+            if (number.Text == ".")
+            {
+                if (!label22.Text.Contains("."))
+                {
+                    label22.Text = label22.Text + number.Text;
+                }
+            } else
+            {
+                label22.Text = label22.Text + number.Text;
+            }
         }
 
         // +,-,*,/
@@ -338,18 +347,20 @@ namespace CalculatorDesign
             Button number = (Button)sender;
             operationPerformed = number.Text;
             resultValue = Double.Parse(label22.Text);
+            label22.Text = resultValue + " " + operationPerformed;
             isOperationPerformed = true;
         }
 
         private void clearAll_click(object sender, EventArgs e)
         {
             label22.Text = "0";
+            label21.Text = "0";
             resultValue = 0;
         }
 
         private void backspace_click(object sender, EventArgs e)
         {
-            label22.Text = "0";
+            label21.Text = "0";
         }
 
         private void resultValue_click(object sender, EventArgs e)
