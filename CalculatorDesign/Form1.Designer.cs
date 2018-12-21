@@ -189,6 +189,7 @@
             this.modulusButton.TabIndex = 29;
             this.modulusButton.Text = "%";
             this.modulusButton.UseVisualStyleBackColor = false;
+            this.modulusButton.Click += new System.EventHandler(this.operator_click);
             this.modulusButton.MouseEnter += new System.EventHandler(this.modulusButton_MouseEnter);
             this.modulusButton.MouseLeave += new System.EventHandler(this.modulusButton_MouseLeave);
             // 

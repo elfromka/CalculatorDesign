@@ -341,7 +341,7 @@ namespace CalculatorDesign
             }
         }
 
-        // +,-,*,/
+        // +,-,*,/,%
         private void operator_click(object sender, EventArgs e)
         {
             Button number = (Button)sender;
@@ -378,6 +378,9 @@ namespace CalculatorDesign
                     break;
                 case "÷":
                     label21.Text = (resultValue / Double.Parse(label22.Text)).ToString();
+                    break;
+                case "%":
+                    label21.Text = (resultValue * (Double.Parse(label22.Text))/100).ToString();
                     break;
                 default:
                     break;
