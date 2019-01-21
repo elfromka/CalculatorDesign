@@ -29,6 +29,8 @@ namespace CalculatorDesign
         public Form1()
         {
             InitializeComponent();
+            this.KeyPreview = true;
+            this.KeyDown += Form1_KeyDown;
             // Adding transparency to label on the blue
             label22.Parent = label21.Parent = label23.Parent = label24.Parent = pictureBox1;
         }
@@ -384,6 +386,47 @@ namespace CalculatorDesign
                     break;
                 default:
                     break;
+            }
+        }
+
+        // numbers input from the keyboard
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad1)
+            {
+                MessageBox.Show("one is clicked");
+            }
+            if (e.KeyCode == Keys.NumPad2)
+            {
+                MessageBox.Show("two is clicked");
+            }
+            if (e.KeyCode == Keys.NumPad3)
+            {
+                MessageBox.Show("three is clicked");
+            }
+            if (e.KeyCode == Keys.NumPad4)
+            {
+                MessageBox.Show("four is clicked");
+            }
+            if (e.KeyCode == Keys.NumPad5)
+            {
+                MessageBox.Show("five is clicked");
+            }
+            if (e.KeyCode == Keys.NumPad6)
+            {
+                MessageBox.Show("six is clicked");
+            }
+            if (e.KeyCode == Keys.NumPad7)
+            {
+                MessageBox.Show("seven is clicked");
+            }
+            if (e.KeyCode == Keys.NumPad8)
+            {
+                MessageBox.Show("eight is clicked");
+            }
+            if (e.KeyCode == Keys.NumPad9)
+            {
+                MessageBox.Show("nine is clicked");
             }
         }
     }
